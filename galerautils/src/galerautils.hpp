@@ -9,6 +9,10 @@
 #ifndef _galerautils_hpp_
 #define _galerautils_hpp_
 
+#ifndef MADV_DONTFORK
+#define MADV_DONTFORK 10
+#endif
+
 #include "gu_exception.hpp"
 #include "gu_throw.hpp"
 #include "gu_logger.hpp"
