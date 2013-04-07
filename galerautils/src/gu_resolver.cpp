@@ -225,6 +225,8 @@ static unsigned int get_ifindex_by_addr(const gu::net::Sockaddr& addr)
                 idx = ifrp->ifr_ifindex;
 #elif defined(__sun__)
                 idx = ifrp->ifr_index;
+#elif defined(__BSD_VISIBLE)
+                idx = ifrp->ifr_ifru.ifru_index;
 #else
 # error "Unsupported ifreq structure"
 #endif
