@@ -11,6 +11,10 @@
 #ifndef _gcs_component_h_
 #define _gcs_component_h_
 
+#ifndef ENOTUNIQ
+#define ENOTUNIQ 76
+#endif
+
 #include <string.h>
 #include <stdbool.h>
 
