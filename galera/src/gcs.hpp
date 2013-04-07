@@ -14,6 +14,10 @@
 #include <GCache.hpp>
 #include <cerrno>
 
+#ifndef EBADFD
+#define EBADFD 77
+#endif
+
 #define GCS_IMPL Gcs
 
 namespace galera
