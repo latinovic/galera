@@ -97,7 +97,7 @@ gcache::PageStore::delete_page () throw (gu::Exception)
                               file_name);
     if (0 != err)
     {
-#ifdef GCACHE_DETACH_THREAD
+#ifndef GCACHE_DETACH_THREAD
         delete_thr_ = -1;
 #else
         delete_thr_ = (pthread_t) -1;
