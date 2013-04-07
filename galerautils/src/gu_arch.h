@@ -39,7 +39,11 @@
 # define GU_WORDSIZE 64 /* Solaris 11 is only 64-bit ATM */
 #elif defined(__BSD_VISIBLE)
 # include <sys/limits.h>
-# define GU_WORDSIZE __WORD_BIT
+# if defined(__i386__)
+#  define GU_WORDSIZE __WORD_BIT
+# elif defined(__x86_64__)
+#  define GU_WORDSIZE __LONG_BIT
+# endif
 #else
 # include <bits/wordsize.h>
 # define GU_WORDSIZE __WORDSIZE
