@@ -11,6 +11,10 @@
 #ifndef GCOMM_CONF_HPP
 #define GCOMM_CONF_HPP
 
+#ifndef ENOTRECOVERABLE
+#define ENOTRECOVERABLE 131
+#endif
+
 #include "gu_config.hpp"
 #include "gu_uri.hpp"
 #include "gu_throw.hpp"
