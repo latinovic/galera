@@ -14,6 +14,9 @@
 #ifndef ERESTART
 #define ERESTART 85
 #endif
+#ifndef ENOTRECOVERABLE
+#define ENOTRECOVERABLE 131
+#endif
 
 #include <stdbool.h>
 
