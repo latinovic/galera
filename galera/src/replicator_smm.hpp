@@ -26,6 +26,10 @@
 #include "gu_atomic.hpp"
 #include "saved_state.hpp"
 
+#ifndef EREMCHG
+#define EREMCHG 78
+#endif
+
 #include <map>
 
 namespace galera
