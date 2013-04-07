@@ -7,6 +7,10 @@
 #ifndef _gcache_page_hpp_
 #define _gcache_page_hpp_
 
+#ifndef POSIX_FADV_DONTNEED
+#define POSIX_FADV_DONTNEED 4
+#endif
+
 #include "gcache_memops.hpp"
 #include "gcache_fd.hpp"
 #include "gcache_mmap.hpp"
