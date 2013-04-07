@@ -12,6 +12,9 @@
 #ifndef MADV_DONTFORK
 #define MADV_DONTFORK 10
 #endif
+#ifndef ENODATA
+#define ENODATA 61
+#endif
 
 #include "gu_macros.h"
 #include "gu_limits.h"
