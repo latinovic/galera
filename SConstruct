@@ -85,7 +85,10 @@ if arch == 'i386' or arch == 'i686':
     link_arch    = compile_arch + ' -Wl,-melf_i386'
 elif arch == 'x86_64' or arch == 'amd64':
     compile_arch = ' -m64'
-    link_arch    = compile_arch + ' -Wl,-melf_x86_64'
+    if sysname == 'freebsd':
+        link_arch    = compile_arch + ' -Wl,-melf_x86_64_fbsd'
+    else:
+        link_arch    = compile_arch + ' -Wl,-melf_x86_64'
 elif arch == 'ppc64':
     compile_arch = ' -mtune=native'
     link_arch    = ''
