@@ -11,6 +11,10 @@
 #ifndef _gcs_group_h_
 #define _gcs_group_h_
 
+#ifndef ERESTART
+#define ERESTART 85
+#endif
+
 #include <stdbool.h>
 
 #include <galerautils.h>
