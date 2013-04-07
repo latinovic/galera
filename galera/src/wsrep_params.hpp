@@ -5,6 +5,10 @@
 #ifndef WSREP_PARAMS_HPP
 #define WSREP_PARAMS_HPP
 
+#ifndef ENOTRECOVERABLE
+#define ENOTRECOVERABLE 131
+#endif
+
 #include "wsrep_api.h"
 
 #include "galerautils.hpp"
