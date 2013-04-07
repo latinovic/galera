@@ -169,7 +169,7 @@ if sysname != 'sunos':
 else:
     env.Append(CPPFLAGS = ' -D__EXTENSIONS__')
 env.Append(CPPFLAGS = ' -DHAVE_COMMON_H')
-if sysname == 'freebsd':
+if sysname == 'freebsd' or sysname == "gnu/kfreebsd":
     env.Append(CPPFLAGS = ' -D__BSD_VISIBLE')
 
 # Common C/CXX flags
