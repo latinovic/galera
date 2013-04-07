@@ -15,6 +15,10 @@
 extern "C" {
 #endif
 
+#ifndef ENOTRECOVERABLE
+#define ENOTRECOVERABLE 131
+#endif
+
 #include <stdint.h>
 #include <stdbool.h>
 #include <unistd.h>
