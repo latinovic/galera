@@ -20,8 +20,8 @@
 
 extern "C" /* old style cast */
 {
-static int const GU_SIOCGIFCONF  = SIOCGIFCONF;
-static int const GU_SIOCGIFINDEX = SIOCGIFINDEX;
+#define GU_SIOCGIFCONF  SIOCGIFCONF
+#define GU_SIOCGIFINDEX SIOCGIFINDEX
 }
 
 //using namespace std;
