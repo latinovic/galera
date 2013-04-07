@@ -18,6 +18,9 @@ extern "C" {
 #ifndef ENOTRECOVERABLE
 #define ENOTRECOVERABLE 131
 #endif
+#ifndef ERESTART
+#define ERESTART 85
+#endif
 
 #include <stdint.h>
 #include <stdbool.h>
