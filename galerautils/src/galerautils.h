@@ -15,6 +15,9 @@
 #ifndef ENODATA
 #define ENODATA 61
 #endif
+#ifndef EBADFD
+#define EBADFD 77
+#endif
 
 #include "gu_macros.h"
 #include "gu_limits.h"
